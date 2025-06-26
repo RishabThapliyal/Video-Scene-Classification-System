@@ -1,0 +1,22 @@
+# Server
+Flask
+Flask-CORS
+
+# NLP and Video Processing Core
+sentence-transformers
+scikit-learn
+transformers
+torch
+torchvision
+opencv-python-headless
+moviepy
+Pillow
+
+# CLIP model and its dependencies
+openai-clip  # For the CLIP model (ViT-B/32)
+ftfy         # Dependency for some versions of CLIP or text processing
+regex        # Dependency for some versions of CLIP
+
+# General utility
+numpy
+matplotlib
