@@ -1,0 +1,40 @@
+/* Team.css */
+.team-container {
+    padding: 2rem 0;
+}
+
+
+
+.team-member-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transition */
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+}
+
+.team-member-card:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2) !important;
+    background-color: rgb(255, 255, 255);
+}
+
+.team-member-details {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    animation: fadeIn 0.6s ease-out;
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

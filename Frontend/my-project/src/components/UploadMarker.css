@@ -1,0 +1,30 @@
+.scene-marker-overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 18px;
+    /* Adjust to sit above the native progress bar */
+    height: 0;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.scene-marker {
+    position: absolute;
+    top: -6px;
+    width: 12px;
+    height: 12px;
+    background: var(--accent-color, #f59e0b);
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transform: translateX(-50%);
+    pointer-events: auto;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.scene-marker:hover {
+    background: #fbbf24;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
