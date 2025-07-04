@@ -1,6 +1,7 @@
 # Server
 Flask
 Flask-CORS
+gunicorn 
 
 # NLP and Video Processing Core
 sentence-transformers
