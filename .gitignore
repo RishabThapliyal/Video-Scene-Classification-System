@@ -1,1 +1,16 @@
 node_modules/ 
+# Python
+Backend/venv/
+__pycache__/
+*.pyc
+
+# Uploaded videos
+*.mp4
+uploads/
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
