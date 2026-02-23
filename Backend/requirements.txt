@@ -1,6 +1,7 @@
 # Server
 Flask
 Flask-CORS
+gunicorn 
 gunicorn
 
 # NLP and Video Processing Core
