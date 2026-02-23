@@ -4,6 +4,7 @@ Flask-CORS
 gunicorn 
 gunicorn
 
+
 # NLP and Video Processing Core
 sentence-transformers
 scikit-learn
@@ -19,6 +20,6 @@ openai-clip  # For the CLIP model (ViT-B/32)
 ftfy         # Dependency for some versions of CLIP or text processing
 regex        # Dependency for some versions of CLIP
 
-# General utility
+# General Utility
 numpy
 matplotlib
