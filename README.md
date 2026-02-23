@@ -1,238 +1,196 @@
-# Video Scene Classification - Modern Frontend
+# 🎬 Video Scene Classification System
 
-A modern, responsive web application for AI-powered video scene classification with an enhanced user interface and improved user experience.
+> AI-powered video analysis tool — search inside any video using natural language.
 
-## 🚀 Features
-
-### ✨ Modern UI/UX
-- **Responsive Design**: Works perfectly on desktop, tablet, and mobile devices
-- **Modern Animations**: Smooth transitions and micro-interactions using Framer Motion
-- **Professional Design System**: Consistent colors, typography, and spacing
-- **Interactive Components**: Hover effects, loading states, and feedback
-
-### 🎯 Core Functionality
-- **Drag & Drop Upload**: Modern file upload with drag and drop support
-- **AI Scene Detection**: Advanced scene classification using CLIP and NLP models
-- **Video Player**: Integrated video player with timestamp seeking
-- **Video Management**: Organize, search, and manage your video library
-- **Real-time Processing**: Progress indicators and status updates
-
-### 🔧 Technical Improvements
-- **Modern React**: Updated to React 18 with latest patterns
-- **Type Safety**: Better error handling and validation
-- **Performance**: Optimized rendering and lazy loading
-- **Accessibility**: ARIA labels and keyboard navigation
-- **Mobile-First**: Responsive design with touch-friendly interactions
-
-## 🛠️ Tech Stack
-
-### Frontend
-- **React 18**: Latest React with hooks and modern patterns
-- **Framer Motion**: Smooth animations and transitions
-- **Lucide React**: Beautiful, consistent icons
-- **React Dropzone**: Modern file upload with drag & drop
-- **React Player**: Advanced video player component
-- **React Hot Toast**: Elegant notifications
-- **Bootstrap 5**: Responsive CSS framework
-- **Custom CSS**: Modern design system with CSS variables
-
-### Backend Integration
-- **Flask API**: Python backend with AI models
-- **CLIP Model**: OpenAI's CLIP for image-text understanding
-- **Sentence Transformers**: Advanced NLP for text processing
-- **OpenCV**: Video processing and frame extraction
-
-## 📦 Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd "Video Scene Classification Project"
-   ```
-
-2. **Install frontend dependencies**
-   ```bash
-   cd Frontend/my-project
-   npm install
-   ```
-
-3. **Install backend dependencies**
-   ```bash
-   cd ../../Backend
-   pip install -r requirements.txt
-   ```
-
-## 🚀 Running the Application
-
-### Start the Backend Server
-```bash
-cd Backend
-python app.py
-```
-The backend will run on `http://127.0.0.1:5000`
-
-### Start the Frontend Development Server
-```bash
-cd Frontend/my-project
-npm start
-```
-The frontend will run on `http://localhost:3000`
-
-## 📱 Pages & Features
-
-### 🏠 Home Page
-- **Hero Section**: Compelling introduction with call-to-action
-- **Feature Showcase**: Interactive feature cards with animations
-- **Statistics**: Animated counters showing platform usage
-- **Testimonials**: User reviews with ratings
-- **Benefits**: Clear value propositions
-
-### 🔍 Search Scene Page
-- **Drag & Drop Upload**: Modern file upload interface
-- **Video Preview**: Integrated video player
-- **Scene Description**: Rich text input with suggestions
-- **Progress Tracking**: Real-time processing indicators
-- **Results Display**: Timestamp results with seek functionality
-- **Tips Section**: Helpful guidance for better results
-
-### 📁 Manage Page
-- **Video Library**: Grid view of uploaded videos
-- **Search & Filter**: Advanced filtering by type and search terms
-- **Bulk Operations**: Select multiple videos for deletion
-- **Video Details**: File size, duration, scenes, and metadata
-- **Quick Actions**: View, download, and delete options
-
-### 👥 Team Page
-- **Team Profiles**: Detailed member information
-- **Skills Display**: Technology expertise and experience
-- **Social Links**: GitHub, LinkedIn, and email contacts
-- **Interactive Cards**: Hover effects and modal details
-- **Statistics**: Team metrics and achievements
-
-### ❓ FAQ Page
-- **Categorized Questions**: Organized by topic
-- **Interactive Accordion**: Smooth expand/collapse animations
-- **Search & Filter**: Find specific questions quickly
-- **Contact Section**: Support options and live chat
-- **Quick Tips**: Helpful guidance for users
-
-## 🎨 Design System
-
-### Colors
-- **Primary**: `#6366f1` (Indigo)
-- **Secondary**: `#10b981` (Emerald)
-- **Accent**: `#f59e0b` (Amber)
-- **Neutral**: Gray scale from 50-900
-
-### Typography
-- **Font Family**: Inter (with system fallbacks)
-- **Scale**: Responsive font sizes from xs to 5xl
-- **Weights**: 400 (normal), 500 (medium), 600 (semibold), 700 (bold), 800 (extrabold)
-
-### Spacing
-- **Consistent Scale**: 0.25rem to 5rem
-- **Responsive**: Adapts to screen size
-- **Component-Specific**: Tailored spacing for different elements
-
-### Animations
-- **Page Transitions**: Smooth route changes
-- **Scroll Animations**: Intersection observer-based reveals
-- **Hover Effects**: Subtle interactions
-- **Loading States**: Progress indicators and spinners
-
-## 🔧 Configuration
-
-### Environment Variables
-Create a `.env` file in the frontend directory:
-```env
-REACT_APP_API_URL=http://127.0.0.1:5000
-REACT_APP_MAX_FILE_SIZE=524288000
-REACT_APP_SUPPORTED_FORMATS=mp4,avi,mov,mkv,wmv,flv
-```
-
-### Customization
-- **Colors**: Modify CSS variables in `src/App.css`
-- **Animations**: Adjust timing in component files
-- **API Endpoints**: Update fetch URLs in components
-- **File Limits**: Change validation in upload components
-
-## 📊 Performance Optimizations
-
-- **Lazy Loading**: Components loaded on demand
-- **Code Splitting**: Route-based code splitting
-- **Image Optimization**: Compressed assets and lazy loading
-- **Bundle Analysis**: Optimized package sizes
-- **Caching**: Efficient caching strategies
-
-## 🔒 Security Features
-
-- **File Validation**: Type and size checking
-- **XSS Protection**: Sanitized inputs
-- **CORS Configuration**: Proper cross-origin settings
-- **Error Boundaries**: Graceful error handling
-- **Input Sanitization**: Clean user inputs
-
-## 📱 Mobile Responsiveness
-
-- **Touch-Friendly**: Large touch targets
-- **Gesture Support**: Swipe and pinch gestures
-- **Adaptive Layout**: Flexible grid systems
-- **Performance**: Optimized for mobile devices
-- **Offline Support**: Service worker for caching
-
-## 🧪 Testing
-
-```bash
-# Run tests
-npm test
-
-# Run tests with coverage
-npm test -- --coverage
-
-# Run tests in watch mode
-npm test -- --watch
-```
-
-## 📦 Build & Deploy
-
-```bash
-# Build for production
-npm run build
-
-# Analyze bundle size
-npm run build -- --analyze
-
-# Deploy to static hosting
-npm run deploy
-```
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🙏 Acknowledgments
-
-- **OpenAI CLIP**: For advanced image-text understanding
-- **Framer Motion**: For smooth animations
-- **Lucide**: For beautiful icons
-- **Bootstrap**: For responsive design foundation
-- **React Community**: For excellent documentation and tools
-
-## 📞 Support
-
-- **Documentation**: Check the FAQ page
-- **Issues**: Report bugs on GitHub
-- **Contact**: Reach out to the team page
-- **Community**: Join our Discord server
+[![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
+[![React](https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev/)
+[![Flask](https://img.shields.io/badge/Flask-2.x-000000?style=flat-square&logo=flask)](https://flask.palletsprojects.com/)
+[![CLIP](https://img.shields.io/badge/OpenAI-CLIP-412991?style=flat-square&logo=openai&logoColor=white)](https://openai.com/research/clip)
+[![GitHub](https://img.shields.io/badge/GitHub-Repo-181717?style=flat-square&logo=github)](https://github.com/RishabThapliyal/Video-Scene-Classification-System)
 
 ---
 
-**Built with ❤️ using modern web technologies**
+## 📌 What It Does
+
+Upload any video and describe a scene in plain English — the system finds the exact timestamp where that scene appears.
+
+**Example queries:**
+
+- `"a boat on the ocean at sunset"`
+- `"person walking in a forest"`
+- `"city street with traffic"`
+
+The system processes video frames using OpenAI's **CLIP** model (zero-shot image-text alignment) and returns the matched timestamp with video playback jumping directly to that moment.
+
+---
+
+## 🧠 How It Works
+
+```
+User uploads video + types scene description
+        ↓
+OpenCV extracts 1 frame/sec from video
+        ↓
+CLIP encodes each frame → image embeddings
+CLIP encodes text query → text embedding
+        ↓
+Cosine similarity computed between text ↔ all frames
+        ↓
+Top matching frame returned with timestamp
+        ↓
+React frontend seeks video to that timestamp
+```
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer            | Technology                                    |
+| ---------------- | --------------------------------------------- |
+| Frontend         | React.js, Bootstrap, react-router-dom         |
+| Backend          | Python, Flask, Flask-CORS                     |
+| AI / ML          | OpenAI CLIP (ViT-B/32), Sentence Transformers |
+| Video Processing | OpenCV (1 frame/sec extraction)               |
+| Similarity       | Cosine Similarity (normalized dot product)    |
+
+---
+
+## 📁 Project Structure
+
+```
+Video-Scene-Classification-System/
+├── Backend/
+│   ├── app.py                    # Flask API server
+│   ├── process_video_frames.py   # OpenCV frame extraction
+│   ├── clip_model.py             # CLIP image & text embeddings
+│   ├── nlp_model.py              # Sentence Transformer integration
+│   └── requirements.txt
+├── Frontend/
+│   └── my-project/
+│       ├── src/
+│       │   ├── App.js            # Root component + routing
+│       │   └── components/
+│       │       ├── Home.js       # Landing page
+│       │       ├── Upload.js     # Video upload + scene search (core)
+│       │       ├── Team.js
+│       │       └── FAQ.js
+│       └── package.json
+├── start-servers.bat             # One-click start (Windows)
+└── README.md
+```
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Python 3.8+
+- Node.js 16+
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/RishabThapliyal/Video-Scene-Classification-System.git
+cd Video-Scene-Classification-System
+```
+
+### 2. Backend setup
+
+```bash
+cd Backend
+python -m venv venv
+venv\Scripts\activate        # Windows
+# source venv/bin/activate   # Mac/Linux
+
+pip install -r requirements.txt
+python app.py
+```
+
+Backend runs at `http://localhost:5000`
+
+### 3. Frontend setup
+
+```bash
+cd Frontend/my-project
+npm install
+npm start
+```
+
+Frontend runs at `http://localhost:3000`
+
+### Quick Start (Windows)
+
+```bash
+# Starts both servers at once:
+start-servers.bat
+```
+
+---
+
+## 🔌 API Reference
+
+| Method | Endpoint                         | Description                            |
+| ------ | -------------------------------- | -------------------------------------- |
+| `POST` | `/api/upload_video`              | Upload video, receive `video_id`       |
+| `POST` | `/api/search_scene`              | Query with `video_id` + `query` string |
+| `GET`  | `/api/thumbnail/<video_id>/<ts>` | Get frame thumbnail at timestamp       |
+
+**Search request:**
+
+```json
+{
+  "video_id": "abc123",
+  "query": "a boat on calm water"
+}
+```
+
+**Response:**
+
+```json
+{
+  "timestamp": "00:00:26",
+  "confidence_score": 0.84
+}
+```
+
+---
+
+## ⚙️ Key Design Decision — 1 Frame/sec Sampling
+
+Processing every frame at 30fps with CLIP is computationally expensive. Sampling at 1 frame/sec gives a **30x reduction** in CLIP inference calls while preserving sufficient semantic coverage for scene-level search.
+
+| Video (10 min @ 30fps) | Frames processed |
+| ---------------------- | ---------------- |
+| Full processing        | 18,000           |
+| 1 frame/sec sampling   | 600 ✅           |
+
+---
+
+## ⚠️ Limitations
+
+- Not deployed — requires local setup (ML models too large for free hosting)
+- GPU recommended for videos longer than 5 minutes; CPU inference is slow
+- 1 frame/sec sampling can miss very short (sub-second) events
+- Purely visual — no audio analysis
+
+---
+
+## 👥 Team
+
+Built as B.Tech Major Project at **Graphic Era Hill University, Dehradun** (June 2025).
+
+| Name                | Roll No |
+| ------------------- | ------- |
+| Rishab Thapliyal    | 2119013 |
+| Shubham Singh Karki | 2119234 |
+| Vimal Singh Panwar  | 2119423 |
+| Yugraj              | 2119460 |
+
+Guide: **Dr. Amrish Sharma**, Professor of Practice, CSE Dept.
+
+---
+
+## 📄 License
+
+MIT License — open source, free to use.
